@@ -9,6 +9,7 @@ import Dashboard from './layout/Dashboard'
 import Overviews from './page/Overviews'
 import User from './page/User'
 import MainLayout from './layout/MainLayout'
+import UserDetails from './page/UserDetails'
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
             <Route path='' element={<Home />} />
             <Route path='overviews' element={<Overviews />} />
             <Route path='user' element={<User />} />
+            <Route path='user/:id' element={<UserDetails />} />
           </Route>
           
           <Route path='*' element={<h1>Page not found</h1>} />

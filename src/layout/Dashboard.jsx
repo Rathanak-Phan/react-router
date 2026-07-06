@@ -6,7 +6,7 @@ function Dashboard() {
   return (
     <div className='h-screen flex'>
         {/* Sidebar */}
-        <div className='h-screen w-84 flex flex-col justify-between bg-gray-300'>
+        <div className='h-screen min-w-84 flex flex-col justify-between bg-gray-300'>
             <div>
                 <div className='h-18 flex justify-center items-center bg-gray-400'>
                     <h2 className='text-2xl font-bold'>Admin dashboard</h2>
@@ -26,7 +26,7 @@ function Dashboard() {
         </div>
 
         {/* Main content */}
-        <div>
+        <div className='w-full'>
             <Outlet />
         </div>
     </div>
